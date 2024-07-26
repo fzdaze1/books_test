@@ -2,11 +2,12 @@ from django.shortcuts import render, get_object_or_404
 from django.http.response import HttpResponse
 from django.views.decorators.http import require_http_methods
 from django.utils.translation import gettext_lazy as _
+from django.db.models import Q
 
 from django.core.cache import cache
 
 from .models import Book
-from .forms import BookCreateForm, BookEditForm
+from .forms import BookCreateForm, BookEditForm, BookSearchForm
 
 import logging
 
@@ -15,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 def delete_cache_keys():
     key_list = ['cached_book_list']
-    for col in ('pk', 'title', 'author', 'price', 'read'):
+    for col in ('pk', 'title', 'author', 'year', 'read'):
         key_list += ['cached_book_list_sorted_' + col]
         key_list += ['cached_book_list_sorted_-' + col]
     cache.delete_many(key_list)
@@ -25,6 +26,12 @@ def delete_cache_keys():
 
 @require_http_methods(['GET'])
 def book_list(request):
+    query = request.GET.get('search_query', '')
+    if query:
+        # Выполняем поиск и возвращаем результаты
+        return search_books(request, query)
+
+    # Кэширование списка книг
     book_list = cache.get_or_set('cached_book_list', Book.objects.all())
     form = BookCreateForm(auto_id=False)
     logger.debug('Book list retrieved from cache')
@@ -85,7 +92,7 @@ def book_list_sort(request, filter, direction):
     filter_dict = {_('id'): 'pk',
                    _('title'): 'title',
                    _('author'): 'author',
-                   _('price'): 'price',
+                   _('year'): 'year',
                    _('read'): 'read'}
 
     if filter in filter_dict:
@@ -99,3 +106,13 @@ def book_list_sort(request, filter, direction):
         f"Book list sorted by {filter} in {direction} order and cached"
     )
     return render(request, 'partial_book_list.html', {'book_list': book_list})
+
+
+def search_books(request, query):
+    form = BookSearchForm(request.GET or None)
+    results = Book.objects.filter(
+        Q(title__icontains=query) |
+        Q(author__icontains=query) |
+        Q(year__icontains=query)
+    )
+    return render(request, 'base.html', {'book_list': results, 'form': form})

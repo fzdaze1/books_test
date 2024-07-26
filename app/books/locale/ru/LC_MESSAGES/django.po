@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-23 11:55+0300\n"
+"POT-Creation-Date: 2024-07-26 11:33+0300\n"
 "PO-Revision-Date: 2023-08-23 11:58+0000\n"
 "Last-Translator:   <admin@localhost>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,22 +16,32 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\books\forms.py:7 .\books\models.py:5
+#: .\books\forms.py:9 .\books\models.py:6
 msgid "Title"
 msgstr "Название"
 
-#: .\books\forms.py:8 .\books\models.py:6
+#: .\books\forms.py:11 .\books\models.py:7
 msgid "Author"
 msgstr "Автор"
 
-#: .\books\forms.py:9 .\books\models.py:7
-msgid "Price"
-msgstr "Цена"
+#: .\books\forms.py:13 .\books\models.py:8
+msgid "Year"
+msgstr ""
 
-#: .\books\models.py:8
+#: .\books\forms.py:32
+msgid "Search"
+msgstr "Поиск"
+
+#: .\books\forms.py:35
+msgid "Введите название, автора или цену"
+msgstr ""
+
+#: .\books\models.py:9
 msgid "Read"
 msgstr "Прочитана"
 
@@ -43,42 +53,48 @@ msgstr "создать_книгу/"
 msgid "update_book_details/<int:pk>/"
 msgstr "обновить_детали_книги/<int:pk>/"
 
-#: .\books\urls.py:18
+#: .\books\urls.py:19
 msgid "book_detail/<int:pk>/"
 msgstr "детали_книги/<int:pk>/"
 
-#: .\books\urls.py:19
+#: .\books\urls.py:20
 msgid "delete_book/<int:pk>/"
 msgstr "удалить_книгу/<int:pk>/"
 
-#: .\books\urls.py:20
+#: .\books\urls.py:21
 msgid "update_book_status/<int:pk>/"
 msgstr "обновить_статус_книги/<int:pk>/"
 
-#: .\books\urls.py:21
+#: .\books\urls.py:23
 msgid "book_list_sort/<filter>/<direction>/"
 msgstr "сортировка_списка_книг/<filter>/<direction>/"
 
-#: .\books\views.py:63
+#: .\books\views.py:92
 msgid "id"
 msgstr "идентификатор"
 
-#: .\books\views.py:64
+#: .\books\views.py:93
 msgid "title"
 msgstr "название"
 
-#: .\books\views.py:65
+#: .\books\views.py:94
 msgid "author"
 msgstr "автор"
 
-#: .\books\views.py:66
-msgid "price"
-msgstr "цена"
+#: .\books\views.py:95
+msgid "year"
+msgstr ""
 
-#: .\books\views.py:67
+#: .\books\views.py:96
 msgid "read"
 msgstr "прочитана"
 
-#: .\books\views.py:70
+#: .\books\views.py:99
 msgid "ascend"
 msgstr "возрастание"
+
+#~ msgid "price"
+#~ msgstr "цена"
+
+#~ msgid "Price"
+#~ msgstr "Цена"

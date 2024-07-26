@@ -22,4 +22,5 @@ urlpatterns = [
          update_book_status, name="update_book_status"),
     path(_("book_list_sort/<filter>/<direction>/"),
          book_list_sort, name="book_list_sort"),
+
 ]
