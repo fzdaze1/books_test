@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 def delete_cache_keys():
     key_list = ['cached_book_list']
-    for col in ('pk', 'title', 'author', 'price', 'read'):
+    for col in ('pk', 'title', 'author', 'year', 'read'):
         key_list += ['cached_book_list_sorted_' + col]
         key_list += ['cached_book_list_sorted_-' + col]
     cache.delete_many(key_list)
@@ -92,7 +92,7 @@ def book_list_sort(request, filter, direction):
     filter_dict = {_('id'): 'pk',
                    _('title'): 'title',
                    _('author'): 'author',
-                   _('price'): 'price',
+                   _('year'): 'year',
                    _('read'): 'read'}
 
     if filter in filter_dict:
@@ -113,6 +113,6 @@ def search_books(request, query):
     results = Book.objects.filter(
         Q(title__icontains=query) |
         Q(author__icontains=query) |
-        Q(price__icontains=query)
+        Q(year__icontains=query)
     )
     return render(request, 'base.html', {'book_list': results, 'form': form})

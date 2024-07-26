@@ -5,16 +5,16 @@ from django.utils.translation import gettext_lazy as _
 
 
 class BookCreateForm(ModelForm):
-    title = CharField(label='qwerty', required=False, widget=TextInput(
+    title = CharField(label='qwerty', required=True, widget=TextInput(
         attrs={"class": "clrtxt", "placeholder": _("Title")}))
-    author = CharField(required=False, widget=TextInput(
+    author = CharField(required=True, widget=TextInput(
         attrs={"class": "clrtxt", "placeholder": _("Author")}))
-    price = CharField(required=False, widget=TextInput(
-        attrs={"class": "clrtxt", "placeholder": _("Price")}))
+    year = CharField(required=True, widget=TextInput(
+        attrs={"class": "clrtxt", "placeholder": _("Year")}))
 
     class Meta:
         model = Book
-        fields = ['title', 'author', 'price']
+        fields = ['title', 'author', 'year']
 
 
 class BookEditForm(BookCreateForm):
@@ -22,7 +22,7 @@ class BookEditForm(BookCreateForm):
         attrs={"class": "form-control-sm form-control"}))
     author = CharField(required=False, widget=TextInput(
         attrs={"class": "form-control-sm form-control"}))
-    price = CharField(required=False, widget=TextInput(
+    year = CharField(required=False, widget=TextInput(
         attrs={"class": "form-control-sm form-control"}))
 
 

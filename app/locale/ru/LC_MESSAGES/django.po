@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 12:57+0300\n"
+"POT-Creation-Date: 2024-07-26 11:10+0300\n"
 "PO-Revision-Date: 2023-09-04 13:02+0000\n"
 "Last-Translator:   <admin@localhost>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,136 +16,136 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\core\settings.py:113
+#: .\django_htmx\settings.py:128
 msgid "English"
 msgstr "Английский"
 
-#: .\core\settings.py:114
+#: .\django_htmx\settings.py:129
 msgid "Russian"
 msgstr "Русский"
 
-#: .\templates\base.html:7
+#: .\templates\base.html:8 .\templates\base.html:21
 msgid "Books"
 msgstr "Книги"
 
-#: .\templates\base.html:12
+#: .\templates\base.html:47
+msgid "Search for books"
+msgstr "Искать книги"
+
+#: .\templates\base.html:48
+msgid "Search"
+msgstr "Поиск"
+
+#: .\templates\base.html:57
 msgid "id"
 msgstr "идентификатор"
 
-#: .\templates\base.html:12
+#: .\templates\base.html:57
 msgid "title"
 msgstr "название"
 
-#: .\templates\base.html:12
+#: .\templates\base.html:58
 msgid "author"
 msgstr "автор"
 
-#: .\templates\base.html:12
-msgid "price"
-msgstr "цена"
+#: .\templates\base.html:58
+msgid "year"
+msgstr "год"
 
-#: .\templates\base.html:13
+#: .\templates\base.html:59
 msgid "read"
 msgstr "прочитана"
 
-#: .\templates\base.html:13
+#: .\templates\base.html:59
 msgid "ascend"
 msgstr "возрастание"
 
-#: .\templates\base.html:13
+#: .\templates\base.html:60
 msgid "descend"
 msgstr "убывание"
 
-#: .\templates\base.html:46
+#: .\templates\base.html:68
 msgid "No."
 msgstr "Номер"
 
-#: .\templates\base.html:51
-#| msgid "ascend"
+#: .\templates\base.html:73
 msgid "id-ascend"
 msgstr "идентификатор-возрастание"
 
-#: .\templates\base.html:57
-#| msgid "descend"
+#: .\templates\base.html:79
 msgid "id-descend"
 msgstr "идентификатор-убывание"
 
-#: .\templates\base.html:65
+#: .\templates\base.html:87
 msgid "Title"
 msgstr "Название"
 
-#: .\templates\base.html:70
-#| msgid "ascend"
+#: .\templates\base.html:92
 msgid "title-ascend"
 msgstr "название-возрастание"
 
-#: .\templates\base.html:76
-#| msgid "descend"
+#: .\templates\base.html:98
 msgid "title-descend"
 msgstr "название-убывание"
 
-#: .\templates\base.html:84
+#: .\templates\base.html:106
 msgid "Author"
 msgstr "Автор"
 
-#: .\templates\base.html:89
-#| msgid "author"
+#: .\templates\base.html:111
 msgid "author-ascend"
 msgstr "автор-возрастание"
 
-#: .\templates\base.html:95
-#| msgid "descend"
+#: .\templates\base.html:117
 msgid "author-descend"
 msgstr "автор-убывание"
 
-#: .\templates\base.html:103
-msgid "Price ($)"
-msgstr "Цена (₽)"
+#: .\templates\base.html:125
+msgid "Year"
+msgstr "Год"
 
-#: .\templates\base.html:108
-#| msgid "ascend"
-msgid "price-ascend"
-msgstr "цена-возрастание"
+#: .\templates\base.html:130
+msgid "year-ascend"
+msgstr "год-возрастание"
 
-#: .\templates\base.html:114
-#| msgid "descend"
-msgid "price-descend"
-msgstr "цена-убывание"
+#: .\templates\base.html:136
+msgid "year-descend"
+msgstr "год-убывание"
 
-#: .\templates\base.html:122
+#: .\templates\base.html:144
 msgid "Status"
 msgstr "Статус"
 
-#: .\templates\base.html:127
-#| msgid "descend"
+#: .\templates\base.html:149
 msgid "read-descend"
 msgstr "прочитана-убывание"
 
-#: .\templates\base.html:133
-#| msgid "ascend"
+#: .\templates\base.html:155
 msgid "read-ascend"
 msgstr "прочитана-возрастание"
 
-#: .\templates\base.html:141
+#: .\templates\base.html:163
 msgid "Actions"
 msgstr "Действия"
 
-#: .\templates\base.html:177
+#: .\templates\base.html:198
 msgid "create_book"
 msgstr "создать_книгу"
 
-#: .\templates\base.html:179
+#: .\templates\base.html:200
 msgid "update_book_details"
 msgstr "обновить_детали_книги"
 
-#: .\templates\base.html:185
+#: .\templates\base.html:206
 msgid "book_detail"
 msgstr "детали_книги"
 
-#: .\templates\base.html:187
+#: .\templates\base.html:208
 msgid "book_list_sort"
 msgstr "сортировка_списка_книг"
 
@@ -182,3 +182,17 @@ msgstr "Отменить"
 #: .\templates\partial_create_book_form.html:23
 msgid "Add book"
 msgstr "Добавить"
+
+#~ msgid "price"
+#~ msgstr "цена"
+
+#~ msgid "Price ($)"
+#~ msgstr "Цена (₽)"
+
+#~| msgid "ascend"
+#~ msgid "price-ascend"
+#~ msgstr "цена-возрастание"
+
+#~| msgid "descend"
+#~ msgid "price-descend"
+#~ msgstr "цена-убывание"

@@ -55,7 +55,7 @@
                 <!-- Начало кэширования заголовка таблицы -->
                 {% cache 600 table_header LANGUAGE_CODE %}
                     {% trans "id" as id %}{% trans "title" as title %}
-                    {% trans "author" as author %}{% trans "price" as price %}
+                    {% trans "author" as author %}{% trans "year" as year %}
                     {% trans "read" as read %}{% trans "ascend" as ascend %}
                     {% trans "descend" as descend %}
                     <thead>
@@ -119,21 +119,21 @@
                                 </small>
                             </th>
 
-                            <!-- Заголовок цены книги -->
+                            <!-- Заголовок года книги -->
                             <th scope="col" style="width: 11%" class="text-center">
                                 <small>
-                                    {% trans "Price ($)" %}
+                                    {% trans "Year" %}
                                     <a href=""
-                                       hx-get="{% url 'book_list_sort' filter=price direction=ascend %}"
+                                       hx-get="{% url 'book_list_sort' filter=year direction=ascend %}"
                                        hx-target="#book-list"
                                        hx-swap="innerHTML">
-                                        <i class="table-icon bi bi-arrow-down-square ms-1 {% trans 'price-ascend' %}"></i>
+                                        <i class="table-icon bi bi-arrow-down-square ms-1 {% trans 'year-ascend' %}"></i>
                                     </a>
                                     <a href=""
-                                       hx-get="{% url 'book_list_sort' filter=price direction=descend %}"
+                                       hx-get="{% url 'book_list_sort' filter=year direction=descend %}"
                                        hx-target="#book-list"
                                        hx-swap="innerHTML">
-                                        <i class="table-icon bi bi-arrow-up-square {% trans 'price-descend' %}"></i>
+                                        <i class="table-icon bi bi-arrow-up-square {% trans 'year-descend' %}"></i>
                                     </a>
                                 </small>
                             </th>

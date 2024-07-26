@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 12:57+0300\n"
+"POT-Creation-Date: 2024-07-26 11:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,123 +18,131 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\core\settings.py:113
+#: .\django_htmx\settings.py:128
 msgid "English"
 msgstr ""
 
-#: .\core\settings.py:114
+#: .\django_htmx\settings.py:129
 msgid "Russian"
 msgstr ""
 
-#: .\templates\base.html:7
+#: .\templates\base.html:8 .\templates\base.html:21
 msgid "Books"
 msgstr ""
 
-#: .\templates\base.html:12
-msgid "id"
+#: .\templates\base.html:47
+msgid "Search for books"
 msgstr ""
 
-#: .\templates\base.html:12
-msgid "title"
-msgstr ""
-
-#: .\templates\base.html:12
-msgid "author"
-msgstr ""
-
-#: .\templates\base.html:12
-msgid "price"
-msgstr ""
-
-#: .\templates\base.html:13
-msgid "read"
-msgstr ""
-
-#: .\templates\base.html:13
-msgid "ascend"
-msgstr ""
-
-#: .\templates\base.html:13
-msgid "descend"
-msgstr ""
-
-#: .\templates\base.html:46
-msgid "No."
-msgstr ""
-
-#: .\templates\base.html:51
-msgid "id-ascend"
+#: .\templates\base.html:48
+msgid "Search"
 msgstr ""
 
 #: .\templates\base.html:57
+msgid "id"
+msgstr ""
+
+#: .\templates\base.html:57
+msgid "title"
+msgstr ""
+
+#: .\templates\base.html:58
+msgid "author"
+msgstr ""
+
+#: .\templates\base.html:58
+msgid "year"
+msgstr ""
+
+#: .\templates\base.html:59
+msgid "read"
+msgstr ""
+
+#: .\templates\base.html:59
+msgid "ascend"
+msgstr ""
+
+#: .\templates\base.html:60
+msgid "descend"
+msgstr ""
+
+#: .\templates\base.html:68
+msgid "No."
+msgstr ""
+
+#: .\templates\base.html:73
+msgid "id-ascend"
+msgstr ""
+
+#: .\templates\base.html:79
 msgid "id-descend"
 msgstr ""
 
-#: .\templates\base.html:65
+#: .\templates\base.html:87
 msgid "Title"
 msgstr ""
 
-#: .\templates\base.html:70
+#: .\templates\base.html:92
 msgid "title-ascend"
 msgstr ""
 
-#: .\templates\base.html:76
+#: .\templates\base.html:98
 msgid "title-descend"
 msgstr ""
 
-#: .\templates\base.html:84
+#: .\templates\base.html:106
 msgid "Author"
 msgstr ""
 
-#: .\templates\base.html:89
+#: .\templates\base.html:111
 msgid "author-ascend"
 msgstr ""
 
-#: .\templates\base.html:95
+#: .\templates\base.html:117
 msgid "author-descend"
 msgstr ""
 
-#: .\templates\base.html:103
-msgid "Price ($)"
+#: .\templates\base.html:125
+msgid "Year"
 msgstr ""
 
-#: .\templates\base.html:108
-msgid "price-ascend"
+#: .\templates\base.html:130
+msgid "year-ascend"
 msgstr ""
 
-#: .\templates\base.html:114
-msgid "price-descend"
+#: .\templates\base.html:136
+msgid "year-descend"
 msgstr ""
 
-#: .\templates\base.html:122
+#: .\templates\base.html:144
 msgid "Status"
 msgstr ""
 
-#: .\templates\base.html:127
+#: .\templates\base.html:149
 msgid "read-descend"
 msgstr ""
 
-#: .\templates\base.html:133
+#: .\templates\base.html:155
 msgid "read-ascend"
 msgstr ""
 
-#: .\templates\base.html:141
+#: .\templates\base.html:163
 msgid "Actions"
 msgstr ""
 
-#: .\templates\base.html:177
+#: .\templates\base.html:198
 msgid "create_book"
 msgstr ""
 
-#: .\templates\base.html:179
+#: .\templates\base.html:200
 msgid "update_book_details"
 msgstr ""
 
-#: .\templates\base.html:185
+#: .\templates\base.html:206
 msgid "book_detail"
 msgstr ""
 
-#: .\templates\base.html:187
+#: .\templates\base.html:208
 msgid "book_list_sort"
 msgstr ""
 
